@@ -1,0 +1,38 @@
+
+
+=== New Flow Run at 2024-12-07 11:40:37 ===
+
+=== Research Output ===
+Number of frameworks: 2
+
+Framework 1:
+Name: The 4 Disciplines of Execution
+Description: A framework designed to help teams execute their strategies successfully.
+Scientific Basis: Goal setting and accountability principles.
+Key Proponents: FranklinCovey
+Practical Applications: Used by organizations like Microsoft, Implemented in educational settings for project management
+Implementation Requirements: Training sessions, Ongoing support
+Limitations: Overly prescriptive, Requires significant commitment
+
+Framework 2:
+Name: Getting Things Done
+Description: A time management framework emphasizing task clarity and organization.
+Scientific Basis: Cognitive load theory and mindset management.
+Key Proponents: David Allen
+Practical Applications: Widely adopted for personal and office management, Utilized across various professional fields
+Implementation Requirements: Initial planning for setup, Adaptative habit formation
+Limitations: Complex to maintain long-term, May require reinforcement to ensure continuity
+
+=== Sending to Planning Crew ===
+Framework JSON: {"name":"The 4 Disciplines of Execution","description":"A framework designed to help teams execute their strategies successfully.","scientific_basis":"Goal setting and accountability principles.","key_proponents":["FranklinCovey"],"practical_applications":["Used by organizations like Microsoft","Implemented in educational settings for project management"],"implementation_requirements":["Training sessions","Ongoing support"],"limitations":["Overly prescriptive","Requires significant commitment"]}
+
+=== Planning Output ===
+Output type: <class 'crewai.crews.crew_output.CrewOutput'>
+Output content: implementation_plans=[ProductImplementationPlan(framework=Framework(name='Pomodoro Technique', description='A time management method developed by Francesco Cirillo to enhance productivity through focused work sessions followed by short breaks.', scientific_basis='The Pomodoro Technique leverages cognitive psychology principles, including the attention span and time management theories, emphasizing that humans can maintain focus for limited periods, typically 25 minutes, which can be optimized wi...
+
+=== Sending to Planning Crew ===
+Framework JSON: {"name":"Getting Things Done","description":"A time management framework emphasizing task clarity and organization.","scientific_basis":"Cognitive load theory and mindset management.","key_proponents":["David Allen"],"practical_applications":["Widely adopted for personal and office management","Utilized across various professional fields"],"implementation_requirements":["Initial planning for setup","Adaptative habit formation"],"limitations":["Complex to maintain long-term","May require reinforcement to ensure continuity"]}
+
+=== Planning Output ===
+Output type: <class 'crewai.crews.crew_output.CrewOutput'>
+Output content: implementation_plans=[ProductImplementationPlan(framework=Framework(name='Pomodoro Technique', description='A time management method that uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks.', scientific_basis='Based on the principles of time perception and work efficiency, the Pomodoro Technique is anchored in cognitive psychology research that highlights the effects of focused work and regular breaks on performance and retention.', key_propo...

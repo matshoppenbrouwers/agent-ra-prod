@@ -1,0 +1,110 @@
+technical_architecture_task:
+  description: >
+    Based on the provided product plan and research, develop a comprehensive technical
+    architecture specification addressing:
+    1. System Architecture
+       - Component breakdown
+       - Service interactions
+       - Data flow diagrams
+    2. Technical Stack
+       - Backend technologies
+       - Frontend framework
+       - Database solutions
+       - Third-party integrations
+    3. API Design
+       - Endpoint specifications
+       - Data models
+       - Authentication/Authorization
+    4. Infrastructure Requirements
+       - Hosting requirements
+       - Scalability considerations
+       - Security measures
+  input_files:
+    - product_plan
+    - research
+  expected_output: >
+    A detailed technical specification document in markdown format:
+
+    ### Technical Architecture Specification
+      * System Architecture Overview
+      * Component Specifications
+      * API Documentation
+      * Data Models
+      * Infrastructure Requirements
+      * Security Considerations
+      
+    Include diagrams using mermaid syntax where appropriate.
+  agent: product_architect
+
+ui_ux_design_task:
+  description: >
+    Based on the technical architecture, product plan, and research, create comprehensive
+    UI/UX specifications including:
+    1. User Interface Design
+       - Component library
+       - Layout specifications
+       - Responsive design guidelines
+    2. User Flows
+       - Core user journeys
+       - Interface state diagrams
+    3. Design System
+       - Color palette
+       - Typography
+       - Component patterns
+    4. Interaction Patterns
+       - Navigation structure
+       - Form behaviors
+       - Error handling
+  input_files:
+    - product_plan
+    - research
+    - technical_architecture.md
+  expected_output: >
+    A detailed UI/UX specification document in markdown format:
+
+    ### UI/UX Design Specification
+      * Design System Documentation
+      * User Flow Diagrams
+      * Component Specifications
+      * Interaction Guidelines
+      * Responsive Design Rules
+      * Accessibility Requirements
+
+    Include wireframes described in detail and user flow diagrams in mermaid syntax.
+  agent: ui_ux_designer
+
+implementation_plan_task:
+  description: >
+    Based on all previous documentation and research, create a detailed implementation plan including:
+    1. Development Phases
+       - Sprint breakdown
+       - Milestone definitions
+    2. Technical Guidelines
+       - Coding standards
+       - Testing requirements
+       - Documentation requirements
+    3. Resource Requirements
+       - Team composition
+       - Development tools
+       - Infrastructure setup
+    4. Risk Management
+       - Technical challenges
+       - Mitigation strategies
+  input_files:
+    - product_plan
+    - research
+    - technical_architecture.md
+    - ui_ux_design.md
+  expected_output: >
+    A comprehensive implementation plan in markdown format:
+
+    ### Implementation Plan
+      * Development Timeline
+      * Technical Guidelines
+      * Resource Requirements
+      * Testing Strategy
+      * Deployment Plan
+      * Risk Management
+      
+    Include specific tasks, dependencies, and time estimates.
+  agent: implementation_strategist

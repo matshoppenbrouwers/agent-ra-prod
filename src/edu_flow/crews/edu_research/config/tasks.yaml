@@ -1,0 +1,49 @@
+research_task:
+  description: >
+    Using the serper search tool, research and analyze emerging productivity frameworks in popular science, focusing on:
+    1. Recently popularized frameworks (2024-2025)
+    2. Scientific foundation and academic validation
+    3. Current adoption and practical applications
+    4. Key thought leaders and promoters
+    5. Success stories and case studies
+    6. Criticisms and limitations
+    7. Implementation requirements
+    8. Market reception and user feedback
+    Consider both academic literature and popular science publications, prioritizing frameworks 
+    that have gained significant traction in the last 1-2 years.
+  expected_output: >
+    Provide two outputs:
+
+    1. A markdown file (research.md) with detailed research findings
+    2. A structured JSON output matching the Framework model with fields:
+    {{
+      "name": string,
+      "description": string,
+      "scientific_basis": string,
+      "key_proponents": List[string],
+      "practical_applications": List[string],
+      "implementation_requirements": List[string],
+      "limitations": List[string]
+    }}
+  agent: researcher
+  output_file: research.md
+
+framework_analysis_task:
+  description: >
+    As a Framework Analysis Specialist, analyze the research findings and synthesize them into comprehensive frameworks:
+    1. Review the research.md input
+    2. Evaluate both emerging (2024-2025) and established frameworks
+    3. Validate scientific foundations and research backing
+    4. Map practical applications and implementation requirements
+    5. Identify limitations and critical perspectives
+  input_files:
+    - research.md
+  expected_output: >
+    Provide a structured output in frameworks.md matching the ResearchOutput model:
+    {{
+      "frameworks": List[Framework],
+      "timestamp": string
+    }}
+  output_file: frameworks.md
+  agent: analyst
+

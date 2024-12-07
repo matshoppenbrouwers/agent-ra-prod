@@ -1,0 +1,69 @@
+blog_planning_task:
+  description: >
+    Using the provided framework data in the kickoff inputs, develop a dedicated content strategy that:
+    - Expects a JSON-formatted framework object with fields:
+      * name
+      * description
+      * scientific_basis
+      * key_proponents
+      * practical_applications
+      * implementation_requirements
+      * limitations
+    - Explains core concepts and principles
+    - Demonstrates practical applications
+    - Presents scientific evidence and validation
+    - Provides implementation guidelines
+    - Addresses common challenges and solutions
+  expected_output: >
+    # Framework-Specific Blog Strategies - Generated on {timestamp}
+    
+    For each framework:
+    ### [Framework Name] Content Plan
+      * Core concept explanation
+      * Target audience and relevance
+      * Key principles breakdown
+      * Scientific backing
+      * Practical implementation guide
+      * Case studies and examples
+      * Common challenges and solutions
+      * Distribution strategy
+
+    Each framework plan should maintain scientific accuracy while being accessible to general readers.
+    
+    Format: Markdown without code blocks
+  agent: blog_planner
+
+product_planning_task:
+  description: >
+    Using the provided framework data in the kickoff inputs, create detailed product specifications that:
+    - Expects a JSON-formatted framework object with fields:
+      * name
+      * description
+      * scientific_basis
+      * key_proponents
+      * practical_applications
+      * implementation_requirements
+      * limitations
+    - Embody the framework's core principles
+    - Define essential features and functionality
+    - Specify technical requirements
+    - Outline implementation approach
+    - Address unique framework challenges
+  expected_output: >
+    # Framework-Based Product Specifications - Generated on {timestamp}
+    
+    For each framework:
+    ### [Framework Name] Product Plan
+      * Core principles implementation
+      * Essential features and functionality
+      * Technical requirements
+      * User experience design
+      * Development roadmap
+      * Implementation challenges
+      * Resource requirements
+      * Success metrics
+
+    Each specification should focus on practical implementation while preserving framework integrity.
+    
+    Format: Markdown without code blocks
+  agent: design_planner
